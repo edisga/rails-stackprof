@@ -27,7 +27,7 @@ class HomeController < ApplicationController
 
     start_time = Time.now
 
-    StackProf.run(mode: :cpu, out: 'stackprof-cpu-myapp.dump') do
+    StackProf.run(mode: :cpu, out: 'tmp/stackprof-cpu-myapp.dump') do
       p "Starting Profiler"
       custom_method()
       p "Finish method and profiler"
