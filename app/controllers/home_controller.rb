@@ -12,10 +12,10 @@ class HomeController < ApplicationController
 
       reportnum = 1
       i = 1
-      num = 214748
+      num = 21474
   
       begin
-          reportnum = reportnum * i;      
+          reportnum = reportnum * i * i;      
           #Open file
           write_to_file(i)
           i +=1;
