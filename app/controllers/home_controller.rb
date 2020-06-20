@@ -23,7 +23,7 @@ class HomeController < ApplicationController
 
   end
 
-  def fib(n)
+  def fibonacci(n)
     if (n<=2)
       return 1
     else
