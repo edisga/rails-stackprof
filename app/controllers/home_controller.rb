@@ -12,7 +12,7 @@ class HomeController < ApplicationController
 
       reportnum = 1
       i = 1
-      num = 21474
+      num = 2147
   
       begin
           reportnum = reportnum * i;      
