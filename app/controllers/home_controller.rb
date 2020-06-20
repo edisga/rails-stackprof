@@ -15,13 +15,18 @@ class HomeController < ApplicationController
       num = 21474
   
       begin
+<<<<<<< HEAD
           reportnum = reportnum * i;      
+=======
+          reportnum = reportnum * i * i;      
+>>>>>>> a118945cab2c3223c37af2f7967408e507b52528
           #Open file
           write_to_file(i)
           i +=1;
        end until i > num
 
   end
+<<<<<<< HEAD
 
   def fib(n)
     if (n<=2)
@@ -31,6 +36,8 @@ class HomeController < ApplicationController
     end
   end
   
+=======
+>>>>>>> a118945cab2c3223c37af2f7967408e507b52528
   
   def index
 
@@ -38,7 +45,10 @@ class HomeController < ApplicationController
 
     StackProf.run(mode: :cpu, out: 'tmp/stackprof-cpu-myapp.dump', raw:true) do
       p "Starting Profiler"
+<<<<<<< HEAD
       p fibonacci(40)
+=======
+>>>>>>> a118945cab2c3223c37af2f7967408e507b52528
       custom_method()
       p "Finish method and profiler"
     end
